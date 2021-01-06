@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tab';
-import TransactionScreen from './Screens/fb';
-import SearchScreen from './Screens/in';
+import facebook from './Screens/Face';
+import instagram from './Screens/Insta';
 
 export default class App extends React.Component{
   render (){
@@ -13,7 +13,7 @@ export default class App extends React.Component{
   }
 }
 const tabNavigator = createBottomTabNavigator({
-  Transaction: {screen:fb},
-  Search:{screen: }
+  Transaction: {screen:facebook},
+  Search:{screen:instagram }
 })
 const AppContainer = createAppContainer(tabNavigator)
